@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iflytek.renshou.dao.TokenMapper">
+	<!--增/改 -->
+	<insert id="insertOrUpdateToken" parameterType="com.iflytek.renshou.pojo.Token"
+		useGeneratedKeys="true" keyProperty="id">
+		<!-- insert into tb_access_token (access_token,create_time) values (
+			    #{token.accessToken,jdbcType=VARCHAR},NOW()); -->
+			    update tb_access_token set access_token=#{token.accessToken,jdbcType=VARCHAR},create_time=NOW() 
+				where id=#{token.id,jdbcType=INTEGER};
+		<!-- <choose>
+			<when test="token.id == null">
+				insert into tb_access_token (access_token,create_time) values (
+			    #{token.accessToken,jdbcType=VARCHAR},NOW());
+			</when>
+			<otherwise>
+				update tb_access_token set access_token=#{token.accessToken,jdbcType=VARCHAR},create_time=NOW() 
+				where id=#{token.id,jdbcType=INTEGER};
+			</otherwise>
+		</choose> -->
+	</insert>
+</mapper>

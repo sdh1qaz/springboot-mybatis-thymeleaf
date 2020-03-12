@@ -22,12 +22,12 @@ public class SchedulService {
 	/**
 	 * 每1分钟做的任务
 	 */
-	@Scheduled(cron = "0 0/1 * * * ? ")
+	/*@Scheduled(cron = "0 0/1 * * * ? ")
 	public void updateQueue() {
 		LOGGER.info("每1分钟做的任务开始...");
 		//做任务
 		LOGGER.info("每1分钟做的任务结束...");
-	}
+	}*/
 	
 	/**
 	 * 每天22:00做的任务

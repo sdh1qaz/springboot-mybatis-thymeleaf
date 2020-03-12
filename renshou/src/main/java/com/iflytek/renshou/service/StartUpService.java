@@ -1,5 +1,7 @@
 package com.iflytek.renshou.service;
 
+import java.util.Timer;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -17,7 +19,9 @@ public class StartUpService implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		LOGGER.info("启动时任务开始...");
-		//做任务
+		/*//做任务
+		Timer timer = new Timer();
+		timer.schedule(new MyTimer(), 0, 5*1000);*/
 		LOGGER.info("启动时任务结束...");
 	}
 	

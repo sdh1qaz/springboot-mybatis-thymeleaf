@@ -3,3 +3,9 @@ http://127.0.0.1:8688/user/get/1
 
 2、测试test.html页面
 http://127.0.0.1:8688/test
+
+3、测试在controller中重定向
+http://127.0.0.1:8688/testRedirect
+
+4、测试首页
+http://127.0.0.1:8688/index.html
