@@ -1,5 +1,0 @@
-方法1：右键pom.xml文件，run as -- Maven install
-
-方法2：右键项目，run as--maven build--Goals填上 clean install
-
-方法参考：https://www.cnblogs.com/qlqwjy/p/8231032.html
