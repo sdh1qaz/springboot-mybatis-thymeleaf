@@ -7,14 +7,22 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import com.alibaba.druid.pool.DruidDataSource;
+
 @MapperScan("com.iflytek.renshou.dao")
 @SpringBootApplication
-public class LanuchApplication {
-	
+public class LanuchApplication extends SpringBootServletInitializer{
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(LanuchApplication.class);
+	}
+
 	/**
 	 * 创建数据源
 	 */
@@ -23,7 +31,7 @@ public class LanuchApplication {
 	public DataSource dataSource() {
 		return new DruidDataSource();
 	}
-	
+
 	/**
 	 * 创建SqlSessionFactory实例
 	 */
