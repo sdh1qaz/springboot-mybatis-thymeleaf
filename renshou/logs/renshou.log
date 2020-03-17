@@ -1,0 +1,44 @@
+2020-03-18 00:59:31,297  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2020-03-18 00:59:31,441  INFO LanuchApplication:50 - Starting LanuchApplication on DESKTOP-5MB9DGL with PID 22148 (D:\git_repo\springboot-mybatis-thymeleaf\renshou\target\classes started by dhsu_2019 in D:\git_repo\springboot-mybatis-thymeleaf\renshou)
+2020-03-18 00:59:31,441  INFO LanuchApplication:656 - The following profiles are active: dev
+2020-03-18 00:59:31,483  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e337fda: startup date [Wed Mar 18 00:59:31 CST 2020]; root of context hierarchy
+2020-03-18 00:59:32,691  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$be40e742] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-18 00:59:33,250  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8081 (http)
+2020-03-18 00:59:33,384  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1903 ms
+2020-03-18 00:59:33,505  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2020-03-18 00:59:33,509  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-18 00:59:33,510  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-18 00:59:33,510  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-18 00:59:33,510  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-18 00:59:34,164  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-03-18 00:59:34,739  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test]}" onto public java.lang.String com.iflytek.renshou.controller.TestController.test(javax.servlet.http.HttpServletRequest)
+2020-03-18 00:59:34,740  INFO RequestMappingHandlerMapping:548 - Mapped "{[/validator],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.iflytek.renshou.controller.UserVoController.validate(com.iflytek.renshou.pojo.ValidatePojo,org.springframework.validation.Errors)
+2020-03-18 00:59:34,741  INFO RequestMappingHandlerMapping:548 - Mapped "{[/user/add],methods=[POST]}" onto public com.iflytek.renshou.pojo.BaseResult com.iflytek.renshou.controller.UserVoController.addUser(com.iflytek.renshou.pojo.UserVo)
+2020-03-18 00:59:34,742  INFO RequestMappingHandlerMapping:548 - Mapped "{[/getsession],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.iflytek.renshou.controller.UserVoController.getsession(javax.servlet.http.HttpServletRequest)
+2020-03-18 00:59:34,742  INFO RequestMappingHandlerMapping:548 - Mapped "{[/user/del/{uid}],methods=[GET]}" onto public com.iflytek.renshou.pojo.BaseResult com.iflytek.renshou.controller.UserVoController.delUser(java.lang.Integer)
+2020-03-18 00:59:34,743  INFO RequestMappingHandlerMapping:548 - Mapped "{[/user/get/{uid}],methods=[GET]}" onto public com.iflytek.renshou.pojo.UserVo com.iflytek.renshou.controller.UserVoController.getUser(java.lang.Integer)
+2020-03-18 00:59:34,743  INFO RequestMappingHandlerMapping:548 - Mapped "{[/user/update],methods=[POST]}" onto public com.iflytek.renshou.pojo.BaseResult com.iflytek.renshou.controller.UserVoController.updateUser(com.iflytek.renshou.pojo.UserVo)
+2020-03-18 00:59:34,744  INFO RequestMappingHandlerMapping:548 - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2020-03-18 00:59:34,747  INFO RequestMappingHandlerMapping:548 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-03-18 00:59:34,748  INFO RequestMappingHandlerMapping:548 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-03-18 00:59:34,749  INFO RequestMappingHandlerMapping:548 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-03-18 00:59:34,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-18 00:59:34,754  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-18 00:59:35,097  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e337fda: startup date [Wed Mar 18 00:59:31 CST 2020]; root of context hierarchy
+2020-03-18 00:59:35,156  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 00:59:35,156  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 00:59:35,196  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-18 00:59:35,235  WARN TemplateMode:150 - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-03-18 00:59:35,288  INFO WelcomePageHandlerMapping:56 - Adding welcome page: class path resource [static/index.html]
+2020-03-18 00:59:35,461  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2020-03-18 00:59:35,523  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2020-03-18 00:59:35,524  INFO AnnotationMBeanExporter:896 - Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-03-18 00:59:35,529  INFO AnnotationMBeanExporter:669 - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2020-03-18 00:59:35,541  INFO ScheduledAnnotationBeanPostProcessor:275 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-03-18 00:59:35,548  INFO DocumentationPluginsBootstrapper:84 - Context refreshed
+2020-03-18 00:59:35,565  INFO DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2020-03-18 00:59:35,572  INFO ApiListingReferenceScanner:44 - Scanning for api listing references
+2020-03-18 00:59:35,604  INFO TomcatWebServer:205 - Tomcat started on port(s): 8081 (http) with context path ''
+2020-03-18 00:59:35,607  INFO LanuchApplication:59 - Started LanuchApplication in 4.406 seconds (JVM running for 4.848)
+2020-03-18 00:59:35,609  INFO StartUpService:21 - 启动时任务开始...
+2020-03-18 00:59:35,609  INFO StartUpService:25 - 启动时任务结束...
